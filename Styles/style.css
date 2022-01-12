@@ -57,6 +57,10 @@ footer {
   text-align: center;
 }
 
+.items__informacion {
+  color: #1a1872;
+}
+
 /*Nosotros*/
 .portada {
   width: 100%;
@@ -76,7 +80,7 @@ footer {
 .menu ul li:hover {
   color: white;
   text-decoration: underline;
-  background-color: tomato;
+  background-color: #1a1872;
 }
 
 .fadeInAnimation {
@@ -104,5 +108,110 @@ footer {
   100% {
     opacity: 1;
   }
+}
+
+/*Promociones*/
+.promociones {
+  margin: 5%;
+}
+
+.promociones__imagen1 {
+  width: 69vh;
+}
+
+.promociones__imagen2 {
+  width: 69vh;
+}
+
+.promociones__imagen3 {
+  width: 69vh;
+}
+
+.promociones__texto1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button__promociones {
+  border-radius: 3ch;
+}
+
+/*Servicios*/
+.servicios1 {
+  background-color: #1a1872;
+  color: white;
+  margin: 0 130px;
+}
+
+.servicios1__texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+.servicios1__imagen {
+  width: 67vh;
+}
+
+.servicios2 {
+  background-color: #1a1872;
+  color: white;
+  margin: 20px 130px;
+}
+
+.servicios2__imagen {
+  width: 69vh;
+}
+
+.servicios2__texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+/*Contacto*/
+.formulario {
+  margin: 5%;
+}
+
+.form {
+  font-family: "Merriweather", serif;
+}
+
+.form__name {
+  margin: 0 0 30px;
+}
+
+.form__email {
+  margin: 0 0 30px;
+}
+
+.form__message {
+  margin: 0 0 30px;
+}
+
+.button__contacto {
+  margin: auto;
+  border-radius: 3ch;
+}
+
+.contacto {
+  margin: 20px 0;
+}
+
+.mapa {
+  border-color: lawngreen;
 }
 /*# sourceMappingURL=style.css.map */
