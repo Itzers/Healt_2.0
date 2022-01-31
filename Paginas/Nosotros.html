@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Merriweather:wght@300;400&family=Outfit:wght@200;400;900&family=Source+Serif+Pro:wght@200;300;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <!-- CSS -->
@@ -18,58 +19,61 @@
 <body>
     <!-- NavBar -->
     <header>
-        <nav class="d-flex justify-content-between">
-            <div>
-                <img src="../Recursos/HEALT_FONDO.png" alt="logo" class="logo">
-            </div>
-            <div class="d-flex align-items-center menu">
-                <ul class="d-flex bd-highlight align-items-center m-0">
-                    <li class="px-4 py-1 bd-highlight ">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="px-4 py-1 bd-highlight" >
-                        <a href="../Paginas/Nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="px-4 py-1 bd-highlight">
-                        <a href="../Paginas/Servicios.html">Servicios</a>
-                    </li>
-                    <li class="px-4 py-1 bd-highlight">
-                        <a href="../Paginas/Promociones.html">Promociones</a>
-                    </li>
-                    <li class="px-4 py-1 bd-highlight">
-                        <a href="../Paginas/Contacto.html">Contacto</a>
-                    </li>
+        <nav class="navBar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="a" class="enlace">
+                <img src="../Recursos/HEALT SIN FONDO.png" alt="" class="logo">
+            </a>
+            <ul class="menu__list">
+                <li class="menu__list_item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="menu__list_item">
+                    <a href="../Paginas/Nosotros.html">Nosotros</a>
+                </li>
+                <li class="menu__list_item">
+                    <a href="../Paginas/Servicios.html">Servicios</a>
+                </li>
+                <li class="menu__list_item">
+                    <a href="../Paginas/Promociones.html">Promociones</a>
+                </li>
+                <li class="menu__list_item">
+                    <a href="../Paginas/Contacto.html">Contacto</a>
+                </li>
                 </ul>
             </div>
         </nav>
     </header>
     <!-- End NavBar -->
     <main>
-        <section>
+        <section class="nosotros">
             <div>
                 <img class="portada" src="../Recursos/PORTADA.png" alt="portada">
             </div>
-            <div class="nosotros__texto fadeInAnimation">
+            <div class="nosotros__texto">
                 <h1>NOSOTROS</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit ad accusantium itaque perspiciatis magni minima eius repellendus voluptatibus consequuntur modi, temporibus quos error nisi eligendi dolores sapiente libero. Debitis!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, earum nobis. Ut delectus aliquam nisi esse, explicabo voluptates porro iste, quos, quia impedit asperiores ducimus. Praesentium quae itaque libero ducimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptates nobis ex sapiente velit ipsum similique et ut, deserunt libero vel animi omnis, ratione rerum sunt error qui vitae labore.</p>
+                <p>Somos una empresa mexicana dedicada a proporcionar una alternativa para mejorar la salud de nuestros pacientes, con cada terapia y un servicio personalizado. Nuestro objetivo principal es dar alivio y momentos de relajación a cada uno para continuar con su día a día de manera saludable. Contamos con un equipo de profesionales altamente capacitados para ofrecer un servicio de calidad, aplicando técnicas avanzadas e innovadoras. </p>
             </div>
-            <div class="d-flex justify-content-around">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top fadeInAnimation" src="../Recursos/mujer_1.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Julieta, es masajista profesional, con 10 años de experiencia, cuenta con certificaciones por parte de la Universidad Autonoma de Chapingo. Le gusta ayudar a la gente a tener una mejor calidad de vida, y poco a poco observar el progreso de sus pacientes.</p>
+            <div class="personal">
+                <div class="personal__nosotros1">
+                    <img class="personal__img fadeInAnimation" src="../Recursos/mujer_1.jpeg" alt="Card image cap">
+                    <div class="personal__body">
+                        <p class="personal__text">Julieta, es masajista profesional, con 10 años de experiencia, cuenta con certificaciones por parte de la Universidad Autonoma de Chapingo. Le gusta ayudar a la gente a tener una mejor calidad de vida, y poco a poco observar el progreso de sus pacientes.</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top fadeInAnimation" src="../Recursos/hombre_1.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Raúl, es terapeuta profesional, cuenta con 5 años de experiencia y certificaciones por parte de la UNAM. Es una persona muy agradable, positiva y sociable, para él es muy importante que sus pacientes tengan la mejor experiencia de relajación.</p>
+                <div class="personal__nosotros2">
+                    <img class="personal__img fadeInAnimation" src="../Recursos/hombre_1.jpeg" alt="Card image cap">
+                    <div class="personal__body">
+                        <p class="personal__text">Raúl, es terapeuta profesional, cuenta con 5 años de experiencia y certificaciones por parte de la UNAM. Es una persona muy agradable, positiva y sociable, para él es muy importante que sus pacientes tengan la mejor experiencia de relajación.</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top fadeInAnimation" src="../Recursos/mujer_2.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Mariana, masajita profesional, con 3 años de experiencia, ella esta mas enfocada en la belleza de la piel, cuenta con licenciatura en cosmetología. Su pasión es lograr que cada uno de sus clientes logren sus objetivos de belleza.</p>
+                <div class="personal__nosotros3">
+                    <img class="personal__img fadeInAnimation" src="../Recursos/mujer_2.jpeg" alt="Card image cap">
+                    <div class="personal__body">
+                        <p class="personal__text">Mariana, masajita profesional, con 3 años de experiencia, ella esta mas enfocada en la belleza de la piel, cuenta con licenciatura en cosmetología. Su pasión es lograr que cada uno de sus clientes logren sus objetivos de belleza.</p>
                     </div>
                 </div>
             </div>
@@ -77,24 +81,27 @@
     </main>
 <!-- Footer -->
     <footer>
-        <div class="d-flex justify-content-around" >
-            <ul id="iconos__redes" class="px-0 bd-highlight mb-0">
-                <li class="px-0 py-2 0 bd-highlight">
+        <div class="footer_menu">
+            <ul class="footer__redes">
+                <li>
                     FOLLOW US:
                 </li>
                 <li>
-                    <img src="../Recursos/instagram.png" alt="instagram">
+                    <a href="https://www.instagram.com/"><img src="../Recursos/instagram.png" alt="instagram">
+                    </a>
                 </li>
                 <li>
-                    <img src="../Recursos/facebook.png" alt="facebook">
+                    <a href="https://www.facebook.com/"><img src="../Recursos/facebook.png" alt="facebook">
+                    </a>
                 </li>
                 <li>
-                    <img src="../Recursos/whatsapp.png" alt="whatsapp">
+                    <a href="https://web.whatsapp.com/"><img src="../Recursos/whatsapp.png" alt="whatsapp">
+                    </a>
                 </li>
             </ul>
         <div>
-            <ul class="d-flex flex-column mb-0 p-0">
-                <li class="px-0 py-2 0 bd-highlight">
+            <ul>
+                <li>
                     CONTACTO
                 </li>
                 <li>
@@ -108,8 +115,8 @@
             </ul>
         </div>
         <div class="footer__items">
-                <ul class="d-flex flex-column mb-0 p-0">
-                    <li class="px-0 py-2 0 bd-highlight">
+                <ul>
+                    <li>
                         INFORMACION
                     </li>
                     <li>
@@ -127,7 +134,7 @@
                 </ul>
             </div>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="leyenda">
             <h6>Aviso de privacidad-Terminos y Condiciones</h6>
         </div>
     </footer>
